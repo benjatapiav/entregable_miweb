@@ -1,0 +1,74 @@
+:root{
+    --color-hover: #f9dacf;
+    --color-boton: #ffc9a8;
+    --color-texto: black;
+    --color-acento: white;
+}
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+}
+
+main{
+    
+}
+
+a{   /* Links */
+    text-decoration: none;
+    color: var(--color-texto);
+    padding: 5px 9px;
+}
+a:hover:not(#carrito-logo){
+    color: var(--color-texto);
+    background-color: var(--color-hover);
+    
+    border-radius: 5px;
+    box-shadow: 2px 2px #0000001e;
+}
+
+#carrito-logo:hover{
+    height: 40px;
+    border-radius: 100%;
+
+}
+
+header{
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.155);
+    background-color: var(--color-boton);
+}
+
+header nav{ /* DIV DE MENU */
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    
+    
+}
+header nav div{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    
+}
+
+#logo{   /* LOGO MRB */
+    height:100px;
+    
+}
+
+header nav img{ /* CARRITO DE COMPRA  */
+    height: 30px;
+}
+
+
+footer{
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.155);
+    text-align: center;
+    margin-top: auto;
+
+}

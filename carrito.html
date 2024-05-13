@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrito.css">
+    <script src="js/vinilos_chilenos.js"></script>
+    <script src="js/funcion_carrito.js" defer></script>
+    <script src="js/carrito.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logos/MRBLOGO.png" alt="logo" id="logo">
+            <div>
+                <a href="vinilos_chilenos.html">Vinilos</a>
+                <a href="#">Tornamesas</a>
+                <a href="carrito.html" id="carrito-logo"><img src="logos/CARRITO.png" alt="carrito de compras"><span id="contador-carrito">0</span></a>
+            </div>
+        </nav>
+    </header>
+	<main>
+		<p id="carrito-vacio">Ups! El carrito está vacío, <a href="index.html">elige algunos productos</a></p>
+		<section id="productos-container">
+
+		</section>
+    <section id="totales">
+        <p>Total unidades: <span id="cantidad">0</span></p>
+        <p>Total precio: $<span id="precio">0</span></p>
+        <button disabled>Comprar</button>
+        <button id="reiniciar">Reiniciar</button>
+    </section>
+    </main>
+    <footer>
+        
+    </footer>
+</body>
+</html> 

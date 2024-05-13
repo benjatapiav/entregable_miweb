@@ -1,0 +1,33 @@
+#producto-container{
+    width: 500px;
+    margin: auto;
+}
+
+#carrito-vacio{
+    text-align: center;
+}
+
+.vinilochileno-producto{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.vinilochileno-producto img{
+    height: 150px;
+    width: 180px;
+    aspect-ratio: 1.5;
+    box-shadow: 2px 3px rgba(0, 0, 0, 0.094);
+    border-radius: 2px;
+}
+.vinilochileno-producto h3{
+    width: 150px;
+    
+}
+#totales{
+    text-align: center;
+}
+
