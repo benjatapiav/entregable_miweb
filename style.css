@@ -72,3 +72,7 @@ footer{
     margin-top: auto;
 
 }
+
+.escondido{
+    display:none;
+}

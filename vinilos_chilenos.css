@@ -43,7 +43,10 @@ h3, p{
 
 button{
     background-color: var(--color-boton);
-    padding: 2px 9px;
+    padding: 4px 9px;
     border-radius: 5px;
-    
+    cursor: pointer;
+}
+button:hover{
+    background-color: #f9dacf;
 }
