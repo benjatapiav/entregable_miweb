@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="js/vinilos_chilenos.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <title>MRB Vinilos</title>
 </head>
 <body>
@@ -12,14 +12,550 @@
         <nav>
             <img src="logos/MRBLOGO.png" alt="logo" id="logo">
             <div>
-                <a href="#">Vinilos Chilenos</a>
-                <a href="#">Tornamesas</a>
+                <a href="#">Inicio</a>
+                <a href="vinilos_chilenos.html">Vinilos Chilenos</a>
+                <a href="vinilos_anglo.html">Vinilos</a>
+                <a href="tornamesas.html">Tornamesas</a>
                 <a href="carrito.html" id="carrito-logo"><img src="logos/CARRITO.png" alt="carrito de compras"><span id="contador-carrito">0</span></a>
             </div>
         </nav>
     </header>
     <main>
         <section >
+          <!-- CARRUSEL DE VINILOS 1 -->
+          <div id="carousel-card-1" class="carousel slide ">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <!-- CONTENEDOR DE CARTAS 1-->
+                <div class="card-contenedor-1">
+    
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">31 MINUTOS</h5>
+                          <p class="card-text">31 minutos</p>
+                          <p class="card-text">$18.590</p>
+                          
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal31minutos">
+                            VER
+                          </button>
+                          <!-- MODAL 31 MINUTOS-->
+                          <div class="modal fade" id="modal31minutos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered"> 
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">31 MINUTOS</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/1.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Primera entrega de los títeres chilenos. El homonimo marca precedencia en la escena nacional de la mano del compositor Pablo Ilabaca</p>
+                                    <hr>
+                                    <h5>31 MINUTOS</h5>
+                                    <h5>$18.590</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>                                
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/ALEJANDROSANZ-UNPLUGGED.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Alejandro Sanz - Unplugged</h5>
+                          <p class="card-text">Alejandro Sanz</p>
+                          <p class="card-text">$21.000</p>
+                          
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal31minutos2">
+                            VER
+                          </button>
+                          <!-- MODAL ALEJANDRO SANZ 2-->
+                          <div class="modal fade" id="modal31minutos2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">CANCIONES DE AMOR Y UNA CANCION DE GUARIPOLO</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/ALEJANDROSANZ-UNPLUGGED.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Desconectado es el sello del unplugged que Sanz aplica en un gran concierto</p>
+                                    <hr>
+                                    <h5>ALEJANDRO SANZ</h5>
+                                    <h5>$21.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">ACONCAGUA</h5>
+                          <p class="card-text">Los Jaivas</p>
+                          <p class="card-text">$30.000</p>
+                          
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalaconcagua">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalaconcagua" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">ACONCAGUA</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/2.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>"Aconcagua" es un disco editado por el grupo chileno Los Jaivas en 1982, que reúne un grupo de grabaciones que la banda realizó a principios de la década de 1980, entre las cuales se cuentan temas compuestos en otras épocas, regrabaciones de temas antiguos y un par de temas nuevos para la ocasión.</p>
+                                    <hr>
+                                    <h5>LOS JAIVAS</h5>
+                                    <h5>$30.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/ALTURASMACCHUPICCHU.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">ALTURAS DE MACCHU PICCHU</h5>
+                          <p class="card-text">Los Jaivas</p>
+                          <p class="card-text">$35.000</p>
+                          
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalmachupichu">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalmachupichu" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">ALTURAS DE MACCHU PICCHU</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/ALTURASMACCHUPICCHU.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>El disco Alturas de Macchu Picchu se concibió en París a fines del año 1980, cuando a la residencia de Los Jaivas, conocida como el castillo Les Glycines, arribó el productor peruano Daniel Camino, quien los conminó a realizar una cantata latinoamericana sobre la base de la poesía de Pablo Neruda. </p>
+                                    <hr>
+                                    <h5>LOS JAIVAS</h5>
+                                    <h5>$35.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- FIN CONTENEDOR DE CARTAS 1-->
+              </div>
+                <!-- FIN PRIMER CORREDOR -->
+
+              <!-- CAROUSEL DE CARTAS 2-->
+              <div class="carousel-item">
+    
+                <div class="card-contenedor-2">
+    
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">BUEN SOLDADO</h5>
+                          <p class="card-text">Francisca Valenzuela</p>
+                          <p class="card-text">$26.490</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalbuensoldado">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalbuensoldado" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">BUEN SOLDADO</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/3.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>“Preparados para luchar y no dejarse vencer”: Este es el Buen Soldado, una producción discográfica que marcó una pauta en la carrera de la cantante y compositora chilena.</p>
+                                    <hr>
+                                    <h5>FRANCISCA VALENZUELA</h5>
+                                    <h5>$26.490</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/RINDANSETERRICOLAS.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">RINDANSE TERRICOLAS</h5>
+                          <p class="card-text">Chancho en Piedra</p>
+                          <p class="card-text">$35.000</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalrindanseterricolas">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalrindanseterricolas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">RINDANSE TERRICOLAS</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/RINDANSETERRICOLAS.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Ríndanse terrícolas (1998) es el tercer álbum del grupo chileno de funk/rock Chancho en Piedra. A diferencia de sus dos discos anteriores, el sonido predominante se acerca más al rock que al funk característico de sus anteriores grabaciones y tiene más incorporación de instrumentos de viento, como flautas, trompetas, trombones y saxofones.</p>
+                                    <hr>
+                                    <h5>CHANCHO EN PIEDRA</h5>
+                                    <h5>$35.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/CECILIALAINCOMPARABLE.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">CECILIA LA INCOMPARABLE</h5>
+                          <p class="card-text">CECILIA</p>
+                          <p class="card-text">$60.000</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalcecilia">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalcecilia" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">CECILIA LA INCOMPARABLE</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/CECILIALAINCOMPARABLE.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Compilado de exitos inolvidables de la gran Cecilia, cantautora chilena de una trayectoria impecable</p>
+                                    <hr>
+                                    <h5>CECILIA</h5>
+                                    <h5>$60.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/SOLACONMISMONSTRUOS.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">SOLA CON MIS MONSTRUOS</h5>
+                          <p class="card-text">Mon Laferte</p>
+                          <p class="card-text">$28.790</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalsolaconmismonstruos">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalsolaconmismonstruos" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">SOLA CON MIS MONSTRUOS</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/SOLACONMISMONSTRUOS.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Sola con mis monstruos es el primer álbum en vivo de la cantautora chilena Mon Laferte, donde presenta 18 canciones en formato acústico, solo acompañada de su guitarrista Sebastián Aracena</p>
+                                    <hr>
+                                    <h5>MON LAFERTE</h5>
+                                    <h5>$28.790</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+    
+                </div>
+                <!-- FIN CONTENEDOR DE CARTAS 2-->
+    
+              </div>
+              <div class="carousel-item">
+    
+                <div class="card-contenedor-3">
+    
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/FRANCISCAVALENZUELA-BIDATANBONITA.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">VIDA TAN BONITA</h5>
+                          <p class="card-text">Francisca Valenzuela</p>
+                          <p class="card-text">$19.000</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalvidatanbonita">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalvidatanbonita" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">VIDA TAN BONITA</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/FRANCISCAVALENZUELA-BIDATANBONITA.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Vida tan bonita es el quinto álbum de la cantante chilena Francisca Valenzuela, lanzado el 6 de mayo de 2022. Es el primer trabajo discográfico de Valenzuela que cuenta con participación de coescritores en su proceso. </p>
+                                    <hr>
+                                    <h5>FRANCISCA VALENZUELA</h5>
+                                    <h5>$19.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/BAILANDOENSILECNCIO.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">BAILANDO EN SILENCIO - EL RESPLANDOR EN VIVO</h5>
+                          <p class="card-text">Carlos Cabezas</p>
+                          <p class="card-text">$19.000</p>
+
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalcarloscabeza">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalcarloscabeza" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">BAILANDO EN SILENCIO - EL RESPLANDOR EN VIVO</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/BAILANDOENSILECNCIO.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>El resplandor es el primer álbum de estudio como solista del vocalista de Electrodomésticos, Carlos Cabezas Rocuant. En vivo nos presenta el resplandor con una ejecucion impecable</p>
+                                    <hr>
+                                    <h5>CARLOS CABEZAS</h5>
+                                    <h5>$19.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/LOMEJORDEVIKING5.png" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">LO MEJOR DE - VIKING 5</h5>
+                          <p class="card-text">LOS VIKING 5</p>
+                          <p class="card-text">$13.000</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalviking5">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modalviking5" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">LO MEJOR DE - VIKING 5</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/LOMEJORDEVIKING5.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Compilado bailable con lo mejor de la gran banda de cumbia nortina, Los Viking 5</p>
+                                    <hr>
+                                    <h5>LOS VIKING 5</h5>
+                                    <h5>$13.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+                    <div class="card" style="width: 18rem;">
+                        <img src="vinilos/LOSBUNKERS.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">LOS BUNKERS</h5>
+                          <p class="card-text">Los Bunkers</p>
+                          <p class="card-text">$21.000</p>
+                          <!-- BOTON MODAL-->
+                          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modallosbunkers">
+                            VER
+                          </button>
+                          <!-- MODAL ACONCAGUA-->
+                          <div class="modal fade" id="modallosbunkers" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5" id="exampleModalLabel">LOS BUNKERS</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="container-fluid" id="contenedor-modal-vinilos" >
+                                  <section style="padding: 15px;">
+                                    <img src="vinilos/LOSBUNKERS.png" style="width: 200px; height: 200px;">
+                                  </section>
+                                  <aside style="padding: 15px;">
+                                    <p>Los Bunkers es el álbum debut de la banda de rock chilena del mismo nombre. Producido por Mauricio Melo y Carlos Cabezas, sería originalmente grabado y publicado de forma independiente en julio del 2000</p>
+                                    <hr>
+                                    <h5>LOS BUNKERS</h5>
+                                    <h5>$21.000</h5>
+                                  </aside>                                  
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- FIN MODAL -->
+                        </div>
+                    </div>
+              </div>
+            </div>
+            <!-- FIN CONTENEDOR DE CARTAS 3-->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel-card-1" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel-card-1" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- FIN CAROUSEL DE VINILOS 1-->
+
+<!-- ###################################################################################################################-->
+
+          <!-- SECCION VINILOS CHILENOS -->
+          <div class="container-fluid text-center" style="width: 1000px;" id="seccion-vinilos-chilenos">
+            <div class="row">
+              <div class="col-6">
+                <img src="vinilos/FONDOCHILENOS.png">
+              </div>
+              <div class="col-6" id="titulo-vinilos-chilenos">
+                <h1>COLECCIÓN CHILENA</h1>
+                <p>Visita la increible colección<br> de música 100% chilena</p>
+                <a type="button" id="boton-vinilos-chilenos" href="vinilos_chilenos.html">
+                  <strong>VER</strong>
+                </a>
+                  
+              </div>
+
+            </div>
+          </div>
+
 
         </section>
 
@@ -28,5 +564,7 @@
         hola
 
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
 </body>
 </html> 

@@ -6,7 +6,7 @@ function crearTarjetasProductosChilenos(productos){
         nuevoTornamesa.classList = "tornamesa-producto";
         nuevoTornamesa.innerHTML = `
         
-            <img src="./tornamesas/${producto.id}.png">
+            <img src="./vinilos/${producto.id}.png">
             <h3>${producto.nombre}</h3>
             <p>${producto.autor}</p>
             <p>$${producto.precio}</p>
