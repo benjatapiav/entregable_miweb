@@ -1,0 +1,120 @@
+
+
+nav a{   /* Links */
+    text-decoration: none;
+    color: var(--color-texto);
+    padding: 5px 9px;
+}
+nav a:hover:not(#carrito-logo){
+    color: var(--color-texto);
+    background-color: var(--color-hover);
+    
+    border-radius: 5px;
+    box-shadow: 2px 2px #0000001e;
+}
+.cart{
+    width: 38px;
+    height: 38px;
+    float: inline-end;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    height: 70px;
+    width: 70px;
+    outline: black;
+    background-color: rgba(0, 0, 0, 0.6);
+    background-size: 30px,30px;
+    border-radius: 50%;
+}
+
+/* -- boton control de carrusel -- */
+button.carousel-control-next,button.carousel-control-prev {
+    width: 9%;
+}
+
+/* ----------------------------------------------------- */
+
+/* CARDS */
+
+.card{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 5pxpx;
+    margin-right: 5px;
+}
+.card:hover{
+background-color: #ffae003b;
+transition-duration: 0.3s;
+}
+.card-contenedor-1, .card-contenedor-2, .card-contenedor-3, .card-contenedor-4{
+    display: flex;
+    justify-content: center;
+}
+
+/* ------------------------------------------------------- */
+
+/* SECCION VINILOS CHILENOS */
+
+.col-6{
+    align-content: center;
+}
+
+
+/* MODAL */
+
+/* -- botones de modal -- */
+
+button.btn.btn-primary{
+    background-color: #FFAF00;
+    border-color: #FFAF00;
+}
+button.btn.btn-primary:hover{
+    background-color: rgb(255, 238, 201);
+    border-color: rgb(255, 238, 201);
+    color: #FFAF00;
+    border-color: #FFAF00;
+}
+button.btn.btn-secondary{
+    background-color: #FFAF00;
+    border-color: #FFAF00;
+}
+
+#contenedor-modal-vinilos{
+    display: flex;
+    position: inherit;
+
+}
+
+/* ------------------------------------------------------- */
+
+/* -- BOTON ENLACE VINILOS CHILENOS -- */
+
+
+#boton-vinilos-chilenos{
+    background-color: #FFAF00;
+    color: white;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10%;
+    border-color: #FFAF00;
+
+}
+
+#boton-vinilos-chilenos:hover{
+    background-color: rgb(255, 238, 201);
+    transition-duration: 0.3s;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-color: white;
+    color: #FFAF00;
+    border-color: rgb(255, 238, 201);
+}
+
+button.btn.btn-primary{
+    justify-items: center;
+}
+
