@@ -1,4 +1,4 @@
-const tornamesas = [
+const tornamesa = [
     {
         id: 13,
         nombre: "T1_TN_175",
@@ -16,8 +16,8 @@ const tornamesas = [
     { 
         id: 15,
         nombre: "T3_TN-4D-SE",
-        img: "./tornamesas/15.png",
         autor: "Wood Table Mic",
+        img: "./tornamesas/15.png",
         precio: 469990, 
     },
     { 
@@ -30,15 +30,15 @@ const tornamesas = [
     { 
         id: 17,
         nombre: "T5_MT2",
-        img: "./tornamesas/17.png",
         autor: "Tech Audio",
+        img: "./tornamesas/17.png",
         precio: 230000, 
     },
     { 
         id: 18,
         nombre: "T6_TD201",
-        img: "./tornamesas/18.png",
         autor: "Whan Kh'on",
+        img: "./tornamesas/18.png",
         precio: 260000, 
     }
 ]

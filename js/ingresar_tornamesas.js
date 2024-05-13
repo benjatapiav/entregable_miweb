@@ -17,4 +17,4 @@ function crearTarjetasProductosChilenos(productos){
         nuevoTornamesa.getElementsByTagName("button")[0].addEventListener("click",()=>agregarAlCarrito(producto));
     });
 }
-crearTarjetasProductosChilenos(tornamesas);
+crearTarjetasProductosChilenos(tornamesa);
