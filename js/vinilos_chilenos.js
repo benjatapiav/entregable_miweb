@@ -4,7 +4,7 @@ const vinilosChilenos = [
         nombre: "31 MINUTOS",
         autor: "31 minutos",
         img: "./vinilos/1.png",
-        precio: 18.490,
+        precio: 18490,
     },
     { 
         id: 2,
