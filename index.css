@@ -41,6 +41,7 @@ button.carousel-control-next,button.carousel-control-prev {
     margin-bottom: 60px;
     margin-left: 5pxpx;
     margin-right: 5px;
+    text-align: center;
 }
 .card:hover{
 background-color: #ffae003b;
@@ -67,6 +68,8 @@ transition-duration: 0.3s;
 button.btn.btn-primary{
     background-color: #FFAF00;
     border-color: #FFAF00;
+    
+    
 }
 button.btn.btn-primary:hover{
     background-color: rgb(255, 238, 201);
