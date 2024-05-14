@@ -1,0 +1,88 @@
+section{
+ display:flex;
+ justify-content: center;
+ background-image: url('vinilos/vinilogift3.gif');
+ background-size: 100%;
+ background-position: 100%;
+ 
+}
+.titulo-formulario{
+    display: flex;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.titulo-formulario #login{
+    height: 50px;
+}
+#formulario-button{
+    background-color: #FFAF00;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 10%;
+    border-color: #FFAF00;
+}
+#formulario-button:hover{
+    background-color: rgb(255, 238, 201);
+    transition-duration: 0.3s;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-color: white;
+    color: #322300;
+    border-color: rgb(255, 238, 201);
+    text-shadow: 0.5px 0.5px black;
+}
+
+.form-izq {
+    background-color: #ffc9a8;
+    padding:40px;
+    max-width: 300px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.084);
+    border-radius: 3px;
+    transition: 200ms;
+    
+}
+.form-izq:hover{
+    translate: 0 -5px;
+    background-color: var(--color-boton);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.231);
+}
+section div input{
+    height: 20px;
+    width: 250px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+}
+section div textarea{
+    height: 100px;
+    width: 250px;
+}
+
+
+.form-der {
+    background-color: #ff8940e6;
+    padding:20px;
+    max-width: 300px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    max-height: 400px;
+    justify-content: center;
+    font-family: sans-serif;
+    
+}
+div #infoMostrada{
+    color: white;
+    
+}
+#infroMostrada{
+    background-color: #ffc9a875;
+    font-family: sans-serif;
+}
+.formulario-escondido{
+    display:none;
+}

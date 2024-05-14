@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="formulario.css">
+    <script src="js/formulario.js"></script>
+    
+    
+    
+    <title>MRB Vinilos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logos/MRBLOGO.png" alt="logo" id="logo">
+            <div>
+                <a href="index.html">Inicio</a>
+                <a href="vinilos_chilenos.html">Vinilos Chilenos</a>
+                <a href="vinilos_anglo.html">Vinilos</a>
+                <a href="tornamesas.html">Tornamesas</a>
+                <a href="carrito.html" id="carrito-logo"><img src="logos/CARRITO.png" alt="carrito de compras"><span id="contador-carrito">0</span></a>
+                <a href="#" id="login"><img src="logos/login.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+                
+                <div class="form-izq">
+                    <div class="titulo-formulario">
+                        <img src="logos/login.png" alt="" id="login">
+                        <h3>Se parte de MRB</h3>
+                    </div>
+                    <label for="">RUT</label><br>
+                    <input type="number" id="rutInput"><br>
+                    <label for="">Nombre</label><br>
+                    <input type="text" id="nombreInput"><br>
+                    <label for="">Apellido/s</label><br>
+                    <input type="text" id="apellidoInput"><br>
+                    <label for="">Fecha Nacimiento</label><br>
+                    <input type="date" id="fechaInput"><br>
+                    <label for="">Edad</label><br>
+                    <input type="number" id="edadInput"><br>
+                    <label for="">Email</label><br>
+                    <input type="email" id="correoInput"><br>
+                    <label for="">Celular</label><br>
+                    <input type="number" id="celularInput"><br>
+                    <label for="">Detalles</label><br>
+                    <textarea id="motiInput" rows="7"></textarea><br>
+                    <!-- boton para usar el script  -->
+                    <button onclick="crearformulario()" id="formulario-button">Enviar Formulario</button>
+                    
+                </div>
+                <div class="form-der">
+                    <div id="infoMostrada">
+
+                    </div>
+                    
+                        
+                </div>
+
+            
+        </section>
+
+    </main>
+    <footer>
+        <img src="logos/MRBLOGO.png" alt="" id="logo-footer">
+        <div>
+          <h5>Siguenos en nuestras redes</h5>
+          <div id="redes">
+              <a href="" ><img src="logos/FACEBOOK.png" alt=""></a>
+              <a href=""><img src="logos/INSTAGRAM.png" alt=""></a>
+              <a href=""><img src="logos/TWITTER.png" alt=""></a>
+          </div>
+      </div>
+      <div id="datos">
+          <h4> TIENDA </h4>
+          <P> Mar de Drake #303, local 40, Pudahuel Sur</P>
+          <div class="datos-horario">
+          <div>
+          <dl>
+              <dt>Horario</dt>
+              <dd> </dd>
+              <dd>Lunes - Viernes</dd>
+              <dd>09:00 - 15:00</dd>
+              <dd>16:00 - 19:00</dd>
+              <dd> </dd>
+              <dd>Domingo</dd>
+              <dd>09:00 - 14:00</dd>
+          </dl>
+          </div>
+          <div>
+          <dl>
+              <dt>Contacto</dt>
+              <dd> </dd>
+              <dd>mrbvinilos@gmail.com</dd>
+              <dd>+56986624039</dd>
+  
+          </dl>
+        </div>
+      </div>
+      </div>
+    </footer>
+</body>
+</html> 

@@ -50,3 +50,31 @@ button{
 button:hover{
     background-color: #f9dacf;
 }
+
+
+footer{
+    box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.155);
+    text-align: center;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: var(--color-boton);
+    font-family: sans-serif;
+    
+}
+
+#redes img{
+    height: 40px;
+}
+.datos-horario{
+    display: flex;
+    gap: 20px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.016);
+}
+#logo-footer{
+    justify-content: left;
+    height: 100px;
+}
