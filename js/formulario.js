@@ -1,4 +1,4 @@
-const reiniciarElemet = document.getElementById("reiniciar");
+
 
 function crearformulario() { /* le damos los valores puestos a cada variable mostrada */
     var infoMostrada = document.getElementById("infoMostrada");

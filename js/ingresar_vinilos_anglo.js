@@ -6,7 +6,7 @@ function crearTarjetasProductosChilenos(productos){
         nuevoViniloAnglo.classList = "viniloanglo-producto";
         nuevoViniloAnglo.innerHTML = `
         
-            <img src="./vinilos/${producto.id}.png">
+            <img src="${producto.url_img}">
             <h3>${producto.nombre}</h3>
             <p>${producto.autor}</p>
             <p>$${producto.precio}</p>
@@ -17,4 +17,8 @@ function crearTarjetasProductosChilenos(productos){
         nuevoViniloAnglo.getElementsByTagName("button")[0].addEventListener("click",()=>agregarAlCarrito(producto));
     });
 }
-crearTarjetasProductosChilenos(vinilosAnglo);
+getVinilosanglo().then(vinilosAnglo =>{
+    crearTarjetasProductosChilenos(vinilosAnglo);
+})
+
+

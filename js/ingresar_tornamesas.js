@@ -6,7 +6,7 @@ function crearTarjetasProductosChilenos(productos){
         nuevoTornamesa.classList = "tornamesa-producto";
         nuevoTornamesa.innerHTML = `
         
-            <img src="./vinilos/${producto.id}.png">
+            <img src="${producto.url_img}">
             <h3>${producto.nombre}</h3>
             <p>${producto.autor}</p>
             <p>$${producto.precio}</p>
@@ -17,4 +17,7 @@ function crearTarjetasProductosChilenos(productos){
         nuevoTornamesa.getElementsByTagName("button")[0].addEventListener("click",()=>agregarAlCarrito(producto));
     });
 }
-crearTarjetasProductosChilenos(tornamesa);
+
+getTornamesa().then(tornamesa =>{
+    crearTarjetasProductosChilenos(tornamesa);
+})

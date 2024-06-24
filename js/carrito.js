@@ -15,7 +15,7 @@ function crearTarjetasProductosChilenos(){
         nuevoViniloChilenos.classList = "vinilochileno-producto";
         nuevoViniloChilenos.innerHTML = `
         
-            <img src="./vinilos/${producto.id}.png">
+            <img src="${producto.url_img}">
             <h3>${producto.nombre}</h3>
             <p>$${producto.precio}</p>
             <div>
