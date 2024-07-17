@@ -14,9 +14,6 @@ app.use(express.urlencoded({extended:false}));
 app.set("views", path.join(__dirname, "views"));
 
 
-
-
-
 app.set("port",400);
 app.listen(400,(res,req)=>{
     console.log("Escuchando comunicaciones al puerto "+app.get("port"));
@@ -56,5 +53,18 @@ app.get("/productos3", async (req,res) => {
     console.log(result3)
 }) 
 
+app.post("/validar", async (req, res) => {
+    const datos = req.body;
+    let cedula = datos.ced;
+    let nombre = datos.nom;
+    let apellido = datos.apell;
+    let mail = datos.correo;
+    let contra = datos.pass;
 
+    const connection4 = await database.getConnection();
+    const result4 = await connection4.query("INSERT INTO USUARIOS(cedula, nombre, apellido, correo, contrasenia) VALUES('" + cedula + "','" + nombre + "','" + apellido + "','" + mail + "','" + contra + "')");
+    res.json(result4);
+    
+
+});
 
