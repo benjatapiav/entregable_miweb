@@ -9,27 +9,33 @@ const cors = require("cors");
 const app = express();
 
 app.set("view engine", "ejs");
-app.use(express.json());
 app.use(express.urlencoded({extended:false}));
-app.set("views", path.join(__dirname, "views"));
+app.use(express.json());
+app.use('/resources', express.static('public'));
+app.use('/resources', express.static(__dirname + '/public'));
 
-
+console.log(__dirname);
 app.set("port",400);
 app.listen(400,(res,req)=>{
     console.log("Escuchando comunicaciones al puerto "+app.get("port"));
 });
 
-app.get("/registro", function(req, res) {
-    res.render("registro");
-});
 //Middleware
 
 app.use(cors({
     origin:["http://127.0.0.1:5502","http://127.0.0.1:5500"]
 }))
 
-app.use(express.static(path.join(__dirname, "..")));
 
+// rutas de registro, login
+app.get("/", (req, res) =>{
+    res.render("registro");
+    
+});
+
+app.get("/login", (req, res) =>{
+    res.render("login");
+});
 
 // Rutas SELECT
 app.get("/productos", async (req,res) => {
@@ -64,7 +70,7 @@ app.post("/validar", async (req, res) => {
     const connection4 = await database.getConnection();
     const result4 = await connection4.query("INSERT INTO USUARIOS(cedula, nombre, apellido, correo, contrasenia) VALUES('" + cedula + "','" + nombre + "','" + apellido + "','" + mail + "','" + contra + "')");
     res.json(result4);
-    
+    console.log(result4);
 
 });
 
