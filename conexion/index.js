@@ -8,30 +8,28 @@ const cors = require("cors");
 
 const app = express();
 
-app.set("view engine", "ejs");
+app.set('view engine','ejs');
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 app.use('/resources', express.static('public'));
 app.use('/resources', express.static(__dirname + '/public'));
 
-console.log(__dirname);
-app.set("port",400);
+
+//app.set("port",400);
 app.listen(400,(res,req)=>{
-    console.log("Escuchando comunicaciones al puerto "+app.get("port"));
+    console.log("Escuchando comunicaciones al puerto 400");
 });
 
 //Middleware
 
-app.use(cors({
-    origin:["http://127.0.0.1:5502","http://127.0.0.1:5500"]
-}))
+
 
 
 // rutas de registro, login
-app.get("/", (req, res) =>{
-    res.render("registro");
+app.get('/', (req, res) =>{
+    res.render('registro.ejs');
     
-});
+})
 
 app.get("/login", (req, res) =>{
     res.render("login");
