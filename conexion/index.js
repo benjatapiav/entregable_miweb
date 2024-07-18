@@ -8,32 +8,19 @@ const cors = require("cors");
 
 const app = express();
 
-app.set('view engine','ejs');
-app.use(express.urlencoded({extended:false}));
-app.use(express.json());
-app.use('/resources', express.static('public'));
-app.use('/resources', express.static(__dirname + '/public'));
-
-
-//app.set("port",400);
+app.set("port",400);
 app.listen(400,(res,req)=>{
     console.log("Escuchando comunicaciones al puerto 400");
 });
 
 //Middleware
 
-
-
+app.use(cors({
+    origin:["http://127.0.0.1:5502"]
+}))
 
 // rutas de registro, login
-app.get('/', (req, res) =>{
-    res.render('registro.ejs');
-    
-})
 
-app.get("/login", (req, res) =>{
-    res.render("login");
-});
 
 // Rutas SELECT
 app.get("/productos", async (req,res) => {
@@ -57,18 +44,4 @@ app.get("/productos3", async (req,res) => {
     console.log(result3)
 }) 
 
-app.post("/validar", async (req, res) => {
-    const datos = req.body;
-    let cedula = datos.ced;
-    let nombre = datos.nom;
-    let apellido = datos.apell;
-    let mail = datos.correo;
-    let contra = datos.pass;
-
-    const connection4 = await database.getConnection();
-    const result4 = await connection4.query("INSERT INTO USUARIOS(cedula, nombre, apellido, correo, contrasenia) VALUES('" + cedula + "','" + nombre + "','" + apellido + "','" + mail + "','" + contra + "')");
-    res.json(result4);
-    console.log(result4);
-
-});
 

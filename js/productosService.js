@@ -16,8 +16,3 @@ async function getViniloschilenos(){
     return resJson3;
   }
 
-  async function getRegistro(){
-    const res = await fetch("http://localhost:400/validar");
-    const resJson4 = await res.json();
-    return resJson4;
-  }
