@@ -13,5 +13,4 @@ const getConnection = async ()=> await connection;
 
 module.exports = {
     getConnection
-
 }
